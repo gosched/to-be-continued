@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!--
+        <script type="text/javascript">
+            function hello(name) {
+                return `Hello ${name}!`;
+            }
+        </script>
+    -->
+    <script type="module">
+        import { hello } from './hello.js';
+
+        window.onload = function () {
+            let welcome = document.getElementById('welcome');
+            welcome.innerHTML = hello(prompt('Input your name'));
+        };
+    </script>
+</head>
+
+<body>
+    <span id="welcome"></span>
+</body>
+
+</html>

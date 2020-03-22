@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head lang="zh">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form id="login-form" action="/login" method="post">
+          <fieldset>
+            <legend>檔案資訊</legend>
+            <p>
+              <label for="filename">檔名</label>
+              <input type="text" name="filename" id="filename" required>
+            </p>
+            <p>
+              <label for="file">檔案</label>
+              <input type="file" name="file" id="file">
+            </p>
+            <p>
+              <input type="submit">
+            </p>
+          </fieldset>
+        </form>
+    </body>
+    <script src="public/upload.js"></script>
+</html>

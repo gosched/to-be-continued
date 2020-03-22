@@ -1,0 +1,17 @@
+*.pem
+*.txt
+*.sql
+*.log
+*.json
+*.bash
+*.yaml
+*.DS_Store
+
+certificate*/
+config*/
+database*/
+resource*/
+storage*/
+
+php*/
+dotnet*/

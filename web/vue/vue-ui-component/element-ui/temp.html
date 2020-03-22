@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TodoList</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+
+<body>
+    <div id="app">
+        <el-tabs v-model="activeName" @tab-click="handleClick">
+            <el-tab-pane label="最新通知" name="first">最新通知</el-tab-pane>
+            <el-tab-pane label="用戶管理" name="second">用戶管理</el-tab-pane>
+            <el-tab-pane label="配置管理" name="third">配置管理</el-tab-pane>
+            <el-tab-pane label="定時任務" name="fourth">定時任務</el-tab-pane>
+            <el-tab-pane label="待辦清單" name="five">待辦清單</el-tab-pane>
+        </el-tabs>
+    </div>
+</body>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                activeName: 'first'
+            };
+        },
+        methods: {
+            handleClick(tab, event) {
+                console.log(tab, event);
+            }
+        }
+    })
+</script>
+
+</html>
